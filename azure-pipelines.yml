@@ -1,0 +1,24 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task:
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'aksarmsp'
+    subscriptionId: 3280ff72-14fc-46dd-809e-ccee75183a87
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'Aks-RG'
+    location: 'East US'
+    templateLocation: 'URL of the file'
+    csmFileLink: 'https://raw.githubusercontent.com/whoaks/AzurePipeline4/main/SC/LT_Storage.json'
+    deploymentMode: Incremental
+    deploymentName: 'MyFirstDeployment'
