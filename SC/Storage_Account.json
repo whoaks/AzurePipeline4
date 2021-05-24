@@ -12,7 +12,7 @@
         },
         "Storage_Account_SKU_Name": {
             "type": "string",
-            "defaultValue": "Standard_LRS"
+            "defaultValue": "Standard_ZRS"
         },
         "Storage_Account_SKU_Tier": {
             "type": "string",
