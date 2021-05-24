@@ -16,7 +16,7 @@ steps:
     azureResourceManagerConnection: 'aksarmsp'
     subscriptionId: 3280ff72-14fc-46dd-809e-ccee75183a87
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'Aks-RG'
+    resourceGroupName: 'Aks-RG2'
     location: 'East US'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/whoaks/AzurePipeline4/main/SC/LT_Storage.json'
