@@ -20,5 +20,5 @@ steps:
     location: 'East US'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/whoaks/AzurePipeline4/main/SC/LT_Storage.json'
-    deploymentMode: Incremental
+    deploymentMode: 'Incremental'
     deploymentName: 'myfirstdeployment'
